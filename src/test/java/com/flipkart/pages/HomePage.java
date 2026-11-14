@@ -20,13 +20,13 @@ public class HomePage {
 		driver.findElement(homeBtn).click();
 		}
 
-	public void verifyText(){
+	public boolean verifyText(){
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		js.executeScript("window.scrollBy(0,1000)");
 
 		WebElement text = driver.findElement(promoText);
-		//js.executeScript("arguments[0].scrollIntoView({block:'center'});",  text);
-		//return text.isDisplayed();
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});",  text);
+		return text.isDisplayed();
 		}
 }
