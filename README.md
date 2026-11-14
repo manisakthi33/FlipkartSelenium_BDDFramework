@@ -1,0 +1,1 @@
+Import as Maven project in Eclipse. Run TestRunner.java as JUnit test. Note: Flipkart UI changes frequently. Update locators in HomePage.java if needed.
