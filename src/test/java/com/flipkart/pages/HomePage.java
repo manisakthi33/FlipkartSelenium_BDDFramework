@@ -16,7 +16,7 @@ public class HomePage {
 	
 
 	public void clickHome() throws InterruptedException	{
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		driver.findElement(homeBtn).click();
 		}
 
