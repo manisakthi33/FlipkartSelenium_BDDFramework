@@ -1,5 +1,6 @@
 package com.flipkart.pages;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage {
 	
@@ -7,6 +8,7 @@ public class HomePage {
 	public HomePage(WebDriver driver)
 	{this.driver=driver;} 
 	
+	By closeBtn = By.xpath("//span[text()='X']");
 	By homeBtn=By.xpath("//div[text()='Home']");
 	By fashionBtn=By.xpath("//div[text()='Fashion']");
 	By electronicsBtn=By.xpath("//div[text()='Electronics']");
@@ -23,31 +25,50 @@ public class HomePage {
 
 	public void clickHome() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);
 		driver.findElement(homeBtn).click();
+		//Thread.sleep(3000);
 		}
 	
 	public void clickfashionBtn() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);		
 		driver.findElement(fashionBtn).click();
 		}
 	
 	public void clickelectronicsBtn() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);
 		driver.findElement(electronicsBtn).click();
 		}
 	
 	public void clickbeautyBtn() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);
 		driver.findElement(beautyBtn).click();
 		}
 	
 	public void clickfoodBtn() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);
 		driver.findElement(foodBtn).click();
 		}
 	
 	public void clickbooksBtn() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);
 		driver.findElement(booksBtn).click();
 		}
 	
@@ -55,6 +76,9 @@ public class HomePage {
 	
 	public void clickfurnitureBtn() throws InterruptedException	{
 		Thread.sleep(5000);
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(2000);
 		driver.findElement(furnitureBtn).click();
 		}
 	
