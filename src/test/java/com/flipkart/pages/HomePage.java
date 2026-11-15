@@ -8,6 +8,12 @@ public class HomePage {
 	{this.driver=driver;} 
 	
 	By homeBtn=By.xpath("//div[text()='Home']");
+	By fashionBtn=By.xpath("//div[text()='Fashion']");
+	By electronicsBtn=By.xpath("//div[text()='Electronics']");
+	By beautyBtn=By.xpath("//div[text()='Beauty']");
+	By foodBtn=By.xpath("//div[text()='Food & Health']");
+	By furnitureBtn=By.xpath("//div[text()='Furniture']");
+	By booksBtn=By.xpath("//div[text()='Books']");
 	By promoText=By.xpath("//*[contains(text(),'More chill, less spends')]");
 	
 	public void open(){
@@ -19,6 +25,40 @@ public class HomePage {
 		Thread.sleep(5000);
 		driver.findElement(homeBtn).click();
 		}
+	
+	public void clickfashionBtn() throws InterruptedException	{
+		Thread.sleep(5000);
+		driver.findElement(fashionBtn).click();
+		}
+	
+	public void clickelectronicsBtn() throws InterruptedException	{
+		Thread.sleep(5000);
+		driver.findElement(electronicsBtn).click();
+		}
+	
+	public void clickbeautyBtn() throws InterruptedException	{
+		Thread.sleep(5000);
+		driver.findElement(beautyBtn).click();
+		}
+	
+	public void clickfoodBtn() throws InterruptedException	{
+		Thread.sleep(5000);
+		driver.findElement(foodBtn).click();
+		}
+	
+	public void clickbooksBtn() throws InterruptedException	{
+		Thread.sleep(5000);
+		driver.findElement(booksBtn).click();
+		}
+	
+	
+	
+	public void clickfurnitureBtn() throws InterruptedException	{
+		Thread.sleep(5000);
+		driver.findElement(furnitureBtn).click();
+		}
+	
+	
 
 	public boolean verifyText(){
 		JavascriptExecutor js = (JavascriptExecutor) driver;
